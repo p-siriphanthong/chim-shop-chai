@@ -14,11 +14,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'TATSanaSuksa';
+    font-family: 'TATSanaChon';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(/fonts/TATSanaChon-Regular.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'TATSanaChon';
     font-style: normal;
     font-weight: bold;
     font-display: swap;
-    src: url(/fonts/TATSanaSuksa-Bold.woff2) format('woff2');
+    src: url(/fonts/TATSanaChon-Bold.woff2) format('woff2');
   }
 
   body {
