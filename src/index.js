@@ -5,15 +5,24 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  @font-face {
+    font-family: 'TATSanaSuksa';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(/fonts/TATSanaSuksa-Regular.woff2) format('woff2');
   }
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  @font-face {
+    font-family: 'TATSanaSuksa';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(/fonts/TATSanaSuksa-Bold.woff2) format('woff2');
+  }
+
+  body {
+    font-family: 'TATSanaSuksa', sans-serif;
   }
 `
 
