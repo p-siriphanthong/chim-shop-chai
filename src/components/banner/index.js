@@ -6,7 +6,6 @@ const Container = styled.div`
   height: 350px;
   display: flex;
   justify-content: center;
-  background-color: red;
 
   @media (max-width: ${config.breakpoints.medium}px) {
     height: 242px;
@@ -29,7 +28,7 @@ const Image = styled.div`
 `
 
 const Logo = styled.img.attrs({
-  src: '/images/banner-logo.png',
+  src: '/images/hero-banner/banner-logo.png',
 })`
   max-width: 100%;
   height: auto;
@@ -37,11 +36,11 @@ const Logo = styled.img.attrs({
 
 const Banner = () => (
   <Container>
-    <Image src='/images/banner-left.png' />
-    <Image src='/images/banner-center.png'>
+    <Image src='/images/hero-banner/banner-left.png' />
+    <Image src='/images/hero-banner/banner-center.png'>
       <Logo />
     </Image>
-    <Image src='/images/banner-right.png' />
+    <Image src='/images/hero-banner/banner-right.png' />
   </Container>
 )
 
