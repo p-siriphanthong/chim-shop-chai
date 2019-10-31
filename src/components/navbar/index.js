@@ -45,7 +45,7 @@ const NavWrapper = styled.div`
     max-height: 0;
     display: block;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
 
     ${props =>
       props.isOpen &&

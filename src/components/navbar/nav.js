@@ -40,7 +40,7 @@ const Text = styled.a`
       left: 0;
       transform: scaleX(0);
       visibility: hidden;
-      transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out;
       background-color: ${config.color.blue};
     }
 
