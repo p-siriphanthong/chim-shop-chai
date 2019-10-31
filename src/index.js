@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     color: ${config.color.text};
     font-family: 'TATSanaSuksa', sans-serif;
+    font-size: 16px;
     line-height: 1.8;
     margin: 0;
     padding-top: ${config.navbar.height}px;
