@@ -37,6 +37,7 @@ const Line2 = styled(Line)`
     css`
       opacity: 0;
       left: -60px;
+      pointer-events: none;
     `}
 `
 
