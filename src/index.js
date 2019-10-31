@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createGlobalStyle } from 'styled-components'
 import App from './App'
+import config from './config'
 import * as serviceWorker from './serviceWorker'
 
 const GlobalStyle = createGlobalStyle`
@@ -14,6 +15,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
+    font-family: 'TATSanaSuksa';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(/fonts/TATSanaChon-Bold.woff2) format('woff2');
+  }
+
+  @font-face {
     font-family: 'TATSanaChon';
     font-style: normal;
     font-weight: normal;
@@ -21,16 +30,17 @@ const GlobalStyle = createGlobalStyle`
     src: url(/fonts/TATSanaChon-Regular.woff2) format('woff2');
   }
 
-  @font-face {
-    font-family: 'TATSanaChon';
-    font-style: normal;
-    font-weight: bold;
-    font-display: swap;
-    src: url(/fonts/TATSanaChon-Bold.woff2) format('woff2');
+  body {
+    color: ${config.color.text};
+    font-family: 'TATSanaSuksa', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding-top: ${config.navbar.height}px;
   }
 
-  body {
-    font-family: 'TATSanaSuksa', sans-serif;
+  a {
+    color: ${config.color.text};
+    text-decoration: none;
   }
 `
 
