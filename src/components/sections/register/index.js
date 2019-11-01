@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import config from '../../../config'
 
 const Wrapper = styled.div`
+  font-family: 'TATSanaChonBold', sans-serif;
   font-weight: bold;
   text-align: center;
   padding: 26px 0;

@@ -7,6 +7,7 @@ import RegisterSection from './components/sections/register'
 import DetailSection from './components/sections/detail'
 import TATSection from './components/sections/tat'
 import BrandSection from './components/sections/brand'
+import Footer from './components/footer'
 
 const App = () => {
   const [data, setData] = useState()
@@ -22,18 +23,11 @@ const App = () => {
         <>
           <Navbar items={data.navbar.items} />
           <Banner />
-          <RegisterSection
-            duration={data.register.duration}
-            link={data.register.link}
-          />
-          <DetailSection
-            title={data.detail.title}
-            description={data.detail.description}
-            conditionTitle={data.detail.conditionTitle}
-            condition={data.detail.condition}
-          />
+          <RegisterSection {...data.register} />
+          <DetailSection {...data.detail} />
           <TATSection items={data.tat} />
           <BrandSection items={data.brand} />
+          <Footer {...data.footer} />
         </>
       ) : null}
     </>

@@ -16,6 +16,7 @@ const Title = styled.p.attrs(props => ({
 }))`
   color: ${config.color.secondary};
   font-size: 36px;
+  font-family: 'TATSanaChonBold', sans-serif;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -33,6 +34,7 @@ const Title = styled.p.attrs(props => ({
 
 const ConditionTitle = styled.p`
   font-size: 18px;
+  font-family: 'TATSanaChonBold', sans-serif;
   font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
