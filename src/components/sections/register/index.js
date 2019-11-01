@@ -38,7 +38,7 @@ const Link = styled.a.attrs({
 `
 
 const LinkLabel = styled.div.attrs(props => ({
-  dangerouslySetInnerHTML: { __html: props.label },
+  dangerouslySetInnerHTML: { __html: props.html },
 }))`
   color: white;
   background-color: ${config.color.primary};
@@ -81,7 +81,7 @@ const Register = ({ duration, link = {} }) => (
     <DurationTitle>ตั้งแต่วันที่</DurationTitle>
     <Duration>{duration}</Duration>
     <Link href={link.href}>
-      <LinkLabel label={link.label} />
+      <LinkLabel html={link.label} />
     </Link>
   </Wrapper>
 )

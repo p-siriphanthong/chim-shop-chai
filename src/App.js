@@ -3,6 +3,7 @@ import config from './config'
 import Navbar from './components/navbar'
 import Banner from './components/banner'
 import RegisterSection from './components/sections/register'
+import DetailSection from './components/sections/detail'
 
 const App = () => {
   const [data, setData] = useState()
@@ -12,12 +13,21 @@ const App = () => {
       .then(res => res.json())
       .then(res =>
         setData({
+          navbarItems: res.navbarItems,
           register: {
-            label:
-              'ลงทะเบียน เฟส 2<br>ตั้งแต่วันที่ 24 ต.ค.62 วันละ 2 รอบ เวลา 6.00 และ 18.00 น.<br>(จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)',
-            href: 'https://regist.xn--b3caa1e2a7e2b0h2be.com/Register/',
+            duration: res.duration,
+            link: {
+              label:
+                'ลงทะเบียน เฟส 2<br>ตั้งแต่วันที่ 24 ต.ค.62 วันละ 2 รอบ เวลา 6.00 และ 18.00 น.<br>(จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)',
+              href: 'https://regist.xn--b3caa1e2a7e2b0h2be.com/Register/',
+            },
           },
-          ...res,
+          detail: {
+            title: 'มาตรการส่งเสริมการบริโภค<br>ในประเทศ “ชิมช้อปใช้”',
+            description: res.detail,
+            conditionTitle: 'เงื่อนไขการเข้าร่วมมาตรการ',
+            condition: res.condition,
+          },
         }),
       )
   }, [])
@@ -29,7 +39,16 @@ const App = () => {
         <>
           <Navbar items={data.navbarItems} />
           <Banner />
-          <RegisterSection duration={data.duration} link={data.register} />
+          <RegisterSection
+            duration={data.register.duration}
+            link={data.register.link}
+          />
+          <DetailSection
+            title={data.detail.title}
+            description={data.detail.description}
+            conditionTitle={data.detail.conditionTitle}
+            condition={data.detail.condition}
+          />
         </>
       ) : null}
     </>

@@ -3,6 +3,8 @@ export default {
   breakpoints: {
     small: 577,
     medium: 769,
+    large: 992,
+    extra: 1200,
   },
   color: {
     text: '#333333',

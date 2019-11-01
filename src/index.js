@@ -43,6 +43,10 @@ const GlobalStyle = createGlobalStyle`
     color: ${config.color.text};
     text-decoration: none;
   }
+
+  .nowrap {
+    white-space: nowrap;
+  }
 `
 
 ReactDOM.render(
