@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/chim-shop-chai/static/js/main.0d188496.chunk.js",
-    "main.js.map": "/chim-shop-chai/static/js/main.0d188496.chunk.js.map",
+    "main.js": "/chim-shop-chai/static/js/main.3ca730a2.chunk.js",
+    "main.js.map": "/chim-shop-chai/static/js/main.3ca730a2.chunk.js.map",
     "runtime-main.js": "/chim-shop-chai/static/js/runtime-main.3037b025.js",
     "runtime-main.js.map": "/chim-shop-chai/static/js/runtime-main.3037b025.js.map",
     "static/js/2.c0d28129.chunk.js": "/chim-shop-chai/static/js/2.c0d28129.chunk.js",
     "static/js/2.c0d28129.chunk.js.map": "/chim-shop-chai/static/js/2.c0d28129.chunk.js.map",
     "index.html": "/chim-shop-chai/index.html",
-    "precache-manifest.c488b93d169cf2d83d8641e0b4968ffc.js": "/chim-shop-chai/precache-manifest.c488b93d169cf2d83d8641e0b4968ffc.js",
+    "precache-manifest.de3aa945118d9ddc2f056e30e770bd8f.js": "/chim-shop-chai/precache-manifest.de3aa945118d9ddc2f056e30e770bd8f.js",
     "service-worker.js": "/chim-shop-chai/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.3037b025.js",
     "static/js/2.c0d28129.chunk.js",
-    "static/js/main.0d188496.chunk.js"
+    "static/js/main.3ca730a2.chunk.js"
   ]
 }
