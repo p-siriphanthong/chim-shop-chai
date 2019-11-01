@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import config from './config'
 import getData from './getData'
+import Loading from './components/loading'
 import Navbar from './components/navbar'
 import Banner from './components/banner'
 import RegisterSection from './components/sections/register'
@@ -18,7 +19,7 @@ const App = () => {
 
   return (
     <>
-      {/* @todo #3 add loading state */}
+      <Loading isOpen={!data} />
       {data ? (
         <>
           <Navbar items={data.navbar.items} />
