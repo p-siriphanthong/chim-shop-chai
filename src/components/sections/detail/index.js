@@ -41,6 +41,7 @@ const ConditionTitle = styled.p`
 const Text = styled.p.attrs(props => ({
   dangerouslySetInnerHTML: { __html: props.html },
 }))`
+  font-size: 18px;
   width: 100%;
   margin: 0;
 `
