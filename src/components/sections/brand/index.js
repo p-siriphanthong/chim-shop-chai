@@ -45,7 +45,7 @@ const TAT = ({ items = [] }) => (
       {items.map(({ image, link }, index) => (
         <LinkWrapper key={index}>
           <Link href={link} target='_blank'>
-            <Image src={image} />
+            <Image src={process.env.PUBLIC_URL + image} />
           </Link>
         </LinkWrapper>
       ))}

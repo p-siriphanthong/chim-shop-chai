@@ -29,7 +29,7 @@ const Image = styled.div`
 `
 
 const Logo = styled.img.attrs({
-  src: '/images/hero-banner/banner-logo.png',
+  src: process.env.PUBLIC_URL + '/images/hero-banner/banner-logo.png',
 })`
   max-width: 100%;
   height: auto;
@@ -37,11 +37,17 @@ const Logo = styled.img.attrs({
 
 const Banner = () => (
   <Container>
-    <Image src='/images/hero-banner/banner-left.png' />
-    <Image src='/images/hero-banner/banner-center.png'>
+    <Image
+      src={`${process.env.PUBLIC_URL}/images/hero-banner/banner-left.png`}
+    />
+    <Image
+      src={`${process.env.PUBLIC_URL}/images/hero-banner/banner-center.png`}
+    >
       <Logo />
     </Image>
-    <Image src='/images/hero-banner/banner-right.png' />
+    <Image
+      src={`${process.env.PUBLIC_URL}/images/hero-banner/banner-right.png`}
+    />
   </Container>
 )
 

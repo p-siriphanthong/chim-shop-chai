@@ -1,18 +1,24 @@
 {
   "name": "chim-shop-chai",
+  "homepage": "http://p-siriphanthong.github.io/chim-shop-chai",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
     "styled-components": "^4.4.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -34,7 +34,7 @@ const LogoWrapper = styled(Item)`
 `
 
 const Logo = styled.img.attrs({
-  src: '/images/logo.png',
+  src: process.env.PUBLIC_URL + '/images/logo.png',
 })`
   width: 108px;
 `

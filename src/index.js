@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url(/fonts/TATSanaSuksa-Regular.woff2) format('woff2');
+    src: url(${process.env.PUBLIC_URL}/fonts/TATSanaSuksa-Regular.woff2) format('woff2');
   }
 
   @font-face {
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url(/fonts/TATSanaChon-Regular.woff2) format('woff2');
+    src: url(${process.env.PUBLIC_URL}/fonts/TATSanaChon-Regular.woff2) format('woff2');
   }
 
   @font-face {
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: bold;
     font-display: swap;
-    src: url(/fonts/TATSanaChon-Bold.woff2) format('woff2');
+    src: url(${process.env.PUBLIC_URL}/fonts/TATSanaChon-Bold.woff2) format('woff2');
   }
 
   body {

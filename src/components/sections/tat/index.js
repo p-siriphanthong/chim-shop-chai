@@ -28,7 +28,7 @@ const TAT = ({ items = [] }) => (
     <Wrapper>
       {items.map(({ image, tel }, index) => (
         <Link key={index} href={`tel:${tel}`}>
-          <Image src={image} />
+          <Image src={process.env.PUBLIC_URL + image} />
         </Link>
       ))}
     </Wrapper>

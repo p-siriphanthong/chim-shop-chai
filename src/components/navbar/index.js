@@ -56,7 +56,7 @@ const NavWrapper = styled.div`
 `
 
 const Logo = styled.img.attrs({
-  src: '/images/logo.png',
+  src: process.env.PUBLIC_URL + '/images/logo.png',
 })`
   height: 100%;
 `
