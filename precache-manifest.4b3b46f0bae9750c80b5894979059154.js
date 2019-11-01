@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17893c0d029846cc2fa1be626ebd8602",
+    "revision": "5387fe150b81ff0ad64702a605be0598",
     "url": "/chim-shop-chai/index.html"
   },
   {
