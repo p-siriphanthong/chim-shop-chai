@@ -38,6 +38,7 @@ const App = () => {
           ],
         }),
       )
+      .catch(console.log)
   }, [])
 
   return (
