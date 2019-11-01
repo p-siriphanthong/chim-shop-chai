@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import LoadingIcon from './icon'
 
 const Wrapper = styled.div`
@@ -13,8 +13,14 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: ${props => props.isOpen ? 1 : 0};
+  opacity: ${props => (props.isOpen ? 1 : 0)};
   transition: 1s ease-in-out;
+
+  ${props =>
+    !props.isOpen &&
+    css`
+      pointer-events: none;
+    `}
 `
 
 const Loading = ({ isOpen = false }) => {
