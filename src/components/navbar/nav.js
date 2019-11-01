@@ -41,11 +41,11 @@ const Text = styled.a`
       transform: scaleX(0);
       visibility: hidden;
       transition: all 0.3s ease-in-out;
-      background-color: ${config.color.blue};
+      background-color: ${config.color.primary};
     }
 
     &:hover {
-      color: ${config.color.blue};
+      color: ${config.color.primary};
 
       &:after {
         transform: scaleX(1);

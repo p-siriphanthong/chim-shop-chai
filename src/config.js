@@ -6,7 +6,9 @@ export default {
   },
   color: {
     text: '#333333',
-    blue: '#213a8f',
+    primary: '#213a8f',
+    secondary: '#e6332a',
+    tertiary: '#fbbc33',
   },
   navbar: {
     height: 60,
