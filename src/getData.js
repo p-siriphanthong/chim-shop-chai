@@ -25,6 +25,14 @@ export default (api, callback) =>
           { image: '/images/tat-banner/CGD.png', tel: '022706400' },
           { image: '/images/tat-banner/Hotline.png', tel: '1672' },
         ],
+        brand: [
+          { image: '/images/brand-logo/MOF.png', link: 'https://www.mof.go.th/th/home' },
+          { image: '/images/brand-logo/FPO.png', link: 'http://www.fpo.go.th' },
+          { image: '/images/brand-logo/CGD.png', link: 'https://www.cgd.go.th' },
+          { image: '/images/brand-logo/Krungthai.png', link: 'https://www.newcb.ktb.co.th' },
+          { image: '/images/brand-logo/MOTS.png', link: 'https://www.mots.go.th' },
+          { image: '/images/brand-logo/TAT.png', link: 'https://thai.tourismthailand.org' },
+        ],
       }),
     )
     .catch(console.log)

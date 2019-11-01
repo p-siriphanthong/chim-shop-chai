@@ -6,6 +6,7 @@ import Banner from './components/banner'
 import RegisterSection from './components/sections/register'
 import DetailSection from './components/sections/detail'
 import TATSection from './components/sections/tat'
+import BrandSection from './components/sections/brand'
 
 const App = () => {
   const [data, setData] = useState()
@@ -32,6 +33,7 @@ const App = () => {
             condition={data.detail.condition}
           />
           <TATSection items={data.tat} />
+          <BrandSection items={data.brand} />
         </>
       ) : null}
     </>

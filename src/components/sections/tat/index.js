@@ -8,7 +8,6 @@ const Wrapper = styled.div`
 `
 
 const Link = styled.a`
-  width: fit-content;
   width: 33.333333%;
   padding: 0 15px;
   display: inline-block;
