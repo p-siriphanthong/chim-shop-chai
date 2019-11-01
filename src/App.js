@@ -4,6 +4,7 @@ import Navbar from './components/navbar'
 import Banner from './components/banner'
 import RegisterSection from './components/sections/register'
 import DetailSection from './components/sections/detail'
+import TATSection from './components/sections/tat'
 
 const App = () => {
   const [data, setData] = useState()
@@ -30,6 +31,11 @@ const App = () => {
             conditionTitle: 'เงื่อนไขการเข้าร่วมมาตรการ',
             condition: res.condition,
           },
+          tat: [
+            { image: '/images/tat-banner/KTB.png', tel: '021111144' },
+            { image: '/images/tat-banner/CGD.png', tel: '022706400' },
+            { image: '/images/tat-banner/Hotline.png', tel: '1672' },
+          ],
         }),
       )
   }, [])
@@ -51,6 +57,7 @@ const App = () => {
             conditionTitle={data.detail.conditionTitle}
             condition={data.detail.condition}
           />
+          <TATSection items={data.tat} />
         </>
       ) : null}
     </>
