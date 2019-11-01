@@ -13,7 +13,9 @@ const App = () => {
       .then(res => res.json())
       .then(res =>
         setData({
-          navbarItems: res.navbarItems,
+          navbar: {
+            items: res.navbarItems,
+          },
           register: {
             duration: res.duration,
             link: {
@@ -37,7 +39,7 @@ const App = () => {
       {/* @todo #3 add loading state */}
       {data ? (
         <>
-          <Navbar items={data.navbarItems} />
+          <Navbar items={data.navbar.items} />
           <Banner />
           <RegisterSection
             duration={data.register.duration}
